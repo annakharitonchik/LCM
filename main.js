@@ -15,6 +15,4 @@ const server = http.createServer( (req, res) => {
     console.log(x,y)
 
 });
-server.listen(3000, () => {
-    console.log("http://localhost:3000/app/zharitonchik_icloud_com?x=-94906297&y=94906299");
-});
+server.listen(process.env.PORT || 3000);
